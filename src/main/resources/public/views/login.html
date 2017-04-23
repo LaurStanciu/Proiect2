@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 offset-md-2 col-md-6 col-sm-offset-2 col-sm-7 col-xs-offset-2 col-xs-8  pt-4">
+            <div class="card bs-20">
+                <div class="card-block">
+                    <form name="_config" ng-submit="login()" novalidate>
+                        <div class="form-group">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input id="inputEmail" class="form-control" name="email" ng-maxlength="30" ng-minlength="1"
+                                   ng-class="{'text-danger': _config.userName.$invalid}" ng-model="credentials.email"
+                                   placeholder="Enter Email" required/>
+                            <small id="userHelp" class="form-text text-muted">Enter your email.</small>
+                            <small id="userNameWarning" ng-show="_config.userName.$invalid && _config.userName.$dirty"
+                                   class="text-danger">Email must be between 1 and 30 characters long!
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPass" class="form-label">Password</label>
+                            <input id="inputPass" type="password" class="form-control" name="password" ng-maxlength="36"
+                                   ng-minlength="1" ng-class="{'text-danger': _config.password.$invalid}"
+                                   ng-model="credentials.password" placeholder="Enter Password" required/>
+                            <small id="passHelp" class="form-text text-muted">Enter your password.</small>
+                            <small id="passwordWarning" ng-show="_config.password.$invalid && _config.password.$dirty"
+                                   class="text-danger">Password must be between 1 and 36 characters long!
+                            </small>
+                        </div>
+
+
+                            <div class="form-group pull-right">
+                                <button type="submit" class="btn btn-secondary ml-2" name="save"
+                                        ng-disabled="_config.$pristine || _config.$invalid">Save
+                                </button>
+                            </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
