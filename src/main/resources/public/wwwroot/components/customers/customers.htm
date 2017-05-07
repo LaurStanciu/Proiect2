@@ -1,0 +1,72 @@
+﻿<div class="modal fade" id="dialogModal" tabindex="-1" role="dialog" aria-labelledby="titleLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="titleLabel">Modify</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="customer-name" class="form-control-label">Customer Name:</label>
+                        <input type="text" class="form-control" id="customer-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-id" class="form-control-label">Customer ID:</label>
+                        <input type="text" class="form-control" id="customer-id" />
+                    </div>
+                    <div class="form-group">
+                        <label for="store-id" class="form-control-label">Store Id:</label>
+                        <input class="form-control" id="store-id" />
+                    </div>
+                    <div class="form-inline">
+                        <label for="customer-is-active" class="custom-control custom-checkbox">
+                            <input class="form-control custom-control-input" id="customer-is-active" type="checkbox" checked />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Active</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Modify</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ml-2 mr-2">
+    <div class="container navbar-nav">
+        <form class="row" name="searchForm" ng-submit="events.search()">
+            <div class="col-12 col-md-4 mt-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" ng-model="search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-outline-primary">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 form-inline text-md-right mt-2">
+                <label class="form-label center-block">Search By: </label>
+                <div class="btn-group">
+                    <label class="btn btn-secondary active" uib-btn-radio="'name'" ng-model="selectedOption">
+                        Name
+                    </label>
+                    <label class="btn btn-secondary" uib-btn-radio="'id'" ng-model="selectedOption">
+                        Customer ID
+                    </label>
+                    <label class="btn btn-secondary" uib-btn-radio="'storeid'" ng-model="selectedOption">
+                        Store ID
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div ui-view>
+
+    </div>
+</div>
