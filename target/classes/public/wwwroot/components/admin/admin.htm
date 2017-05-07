@@ -1,0 +1,58 @@
+﻿
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-12 offset-md-2 col-md-6 pt-4">
+            <div class="card bs-20">
+                <div class="card-block">
+
+                    <h2>Storage Configuration</h2>
+                    <p class="text-muted">
+                        <p>In this page you can set up your connection with the database in two ways:</p><ul><li>complete the form below and press the "Save" button</li><li>or press the "Use default settings" button to use the default settings</li></ul></p>
+
+                    <form name="_config" ng-submit="events.output()" novalidate>
+                        <div class="form-group">
+                            <label for="inputDbProvider" class="form-label">Database Provider</label>
+                            <select id="inputDbProvider" class="form-control custom-select" name="dbProvider" ng-model="vm.Settings.dbProvider"
+                                    ng-options="label for label in dbProviders"></select>
+                            <small id="providerHelp" class="form-text text-muted">Select the database provider.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputServer" class="form-label">Server name</label>
+                            <input id="inputServer" class="form-control" name="serverName" ng-maxlength="50" ng-minlength="2" ng-class="{'text-danger': _config.serverName.$invalid}" ng-model="vm.Settings.server" placeholder="Enter Server Name" required/>
+                            <small id="serverHelp" class="form-text text-muted">Enter the server database name.</small>
+                            <small id="serverWarning" ng-show="_config.serverName.$invalid && _config.serverName.$dirty" class="text-danger">Server Name must be between 2 and 50 characters long!</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDb" class="form-label">Database name</label>
+                            <input id="inputDb" class="form-control" name="dbName" ng-model="vm.Settings.database" ng-maxlength="50" ng-minlength="3" ng-class="{'text-danger': _config.dbName.$invalid}" placeholder="Enter Database Name" required/>
+                            <small id="dbHelp" class="form-text text-muted">Enter the database name</small>
+                            <small id="databaseWarning" ng-show="_config.dbName.$invalid && _config.dbName.$dirty" class="text-danger">Database Name must be between 3 and 50 characters long!</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputUserId" class="form-label">User Id</label>
+                            <input id="inputUserId" class="form-control" name="userName" ng-maxlength="50" ng-minlength="1" ng-class="{'text-danger': _config.userName.$invalid}" ng-model="vm.Settings.userId" placeholder="Enter User Id" required/>
+                            <small id="userHelp" class="form-text text-muted">Enter the user id to login to database.</small>
+                            <small id="userNameWarning" ng-show="_config.userName.$invalid && _config.userName.$dirty" class="text-danger">User Name must be between 1 and 50 characters long!</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPass" class="form-label">Password</label>
+                            <input id="inputPass" type="password" class="form-control" name="password" ng-maxlength="50" ng-minlength="5" ng-class="{'text-danger': _config.password.$invalid}" ng-model="vm.Settings.password" placeholder="Enter Password" required/>
+                            <small id="passHelp" class="form-text text-muted">Enter the password to login to database.</small>
+                            <small id="passwordWarning" ng-show="_config.password.$invalid && _config.password.$dirty" class="text-danger">Password must be between 5 and 50 characters long!</small>
+                        </div>
+                        <div class="container">
+
+                            <div class="form-group pull-right">
+                                <button type="submit" class="btn btn-primary bs-10 hv-bs-20-1" name="defaultSetts" ng-click="default = true">Use default settings</button>
+                                <button type="submit" class="btn btn-secondary ml-2" name="save"  ng-disabled="_config.$pristine || _config.$invalid">Save</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
