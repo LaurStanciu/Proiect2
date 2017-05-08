@@ -1,0 +1,43 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-12 offset-md-2 col-md-6 col-sm-offset-3 col-sm-7 col-xs-offset-3 col-xs-8  pt-4">
+            <div class="card bs-20">
+
+                    <form name="signInForm" class="col-10 offset-1" ng-submit="events.signIn()" novalidate>
+                        <div class="card-block">
+                            <h4 class="card-title"><i class="ion-log-in mr-2"></i>log In</h4>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input id="inputEmail" class="form-control" name="email" type="email" ng-maxlength="30" ng-minlength="1"
+                                   ng-class="{'text-danger': signInForm.email.$invalid}"  ng-model="vm.signIn.Email"
+                                   placeholder="Enter Email" required/>
+                            <small id="inputEmailWarning" ng-show="signInForm.email.$invalid && signInForm.email.$dirty"
+                                   class="text-danger">Email must be between 1 and 30 characters long and it must contain the domain!
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPass" class="form-label">Password</label>
+                            <input id="inputPass" type="password" class="form-control" name="password" ng-maxlength="36"
+                                   ng-minlength="1" ng-class="{'text-danger': signInForm.password.$invalid}"
+                                   ng-model="vm.signIn.Password" placeholder="Enter Password" required/>
+                            <small id="passwordWarning" ng-show="signInForm.password.$invalid && signInForm.password.$dirty"
+                                   class="text-danger">Password must be between 1 and 36 characters long!
+                            </small>
+                        </div>
+
+
+                        <div class="form-group pull-right">
+                            <button type="submit" class="btn btn-secondary ml-2" name="logIn"
+                                    ng-disabled="signInForm.$pristine || signInForm.$invalid">Log in
+                            </button>
+                        </div>
+                        <br />
+                        <p>Don't have an account? <a href="" class="card-link" ng-click="accounts.sref({state: 'sign-up'})">Register</a></p>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -86,6 +86,7 @@
 
             .state("sign-in", {
                 url: "/sign-in?returnState&returnStateParams",
+                parent: "defaultLayout",
                 templateUrl: data.templates.getURL("accounts/sign-in"),
                 controller: "accountsCtrl"
             })

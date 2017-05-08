@@ -13,13 +13,13 @@ var gulp = require("gulp"),
     watch = require("gulp-watch");
 
 var paths = {
-    webRoot: "./src/main/resources/public/wwwroot/",
+    public: "./src/main/resources/public/wwwroot/",
     private: "./src/main/resources/private/"
 }
-paths.assetsPath = paths.webRoot + "assets/";
+paths.assetsPath = paths.public + "assets/";
 paths.angularPaths = paths.assetsPath + "angular/";
 paths.componentsPrivate = paths.private + "components/";
-paths.componentsRoot = paths.webRoot + "components/";
+paths.componentsPublic = paths.public + "components/";
 
 var cleanPaths = {
     CSS: [],
@@ -28,13 +28,13 @@ var cleanPaths = {
 
 // clean paths for js files
 
-cleanPaths.JS.push(paths.webRoot + "app/**/*.js");
-cleanPaths.JS.push(paths.webRoot + "components/**/*.js");
-cleanPaths.JS.push(paths.webRoot + "directives/**/*.js");
+cleanPaths.JS.push(paths.public + "app/**/*.js");
+cleanPaths.JS.push(paths.public + "components/**/*.js");
+cleanPaths.JS.push(paths.public + "directives/**/*.js");
 
 // clean paths for css files
 
-cleanPaths.CSS.push(paths.webRoot + "app/**/*.css");
+cleanPaths.CSS.push(paths.public + "app/**/*.css");
 
 
 var minPath = {
@@ -68,8 +68,9 @@ minPath.jQuery.push(paths.assetsPath + "bootstrap/js/bootstrap.min.js");
 minPath.jQuery.push(paths.assetsPath + "plainJS/autoComplete/auto-complete.min.js");
 
 //minify paths for components js files
-minPath.componentsJs.accounts.push(paths.componentsPrivate + "*.js");
+minPath.componentsJs.accounts.push(paths.componentsPrivate + "accounts/*.js");
 //min for login
+
 minPath.componentsJs.login.push(paths.componentsPrivate + "login/*.js");
 
 //min for css
@@ -102,35 +103,35 @@ gulp.task("min:appjs", function () {
     return gulp.src(minPath.APPJS)
         .pipe(concat("app.js"))
         .pipe(uglify({ mangle: { except: ['angular', 'jQuery']} } ))
-        .pipe(gulp.dest(paths.webRoot + "app/js/"));
+        .pipe(gulp.dest(paths.public + "app/js/"));
 });
 
 gulp.task("min:jquery-bootstrap", function () {
     return gulp.src(minPath.jQuery)
         .pipe(concat("jquery-bootstrap.js"))
         .pipe(uglify({ mangle: { except: ['jQuery'] } }))
-        .pipe(gulp.dest(paths.webRoot + "app/js/"));
+        .pipe(gulp.dest(paths.public + "app/js/"));
 });
 
 gulp.task("min:accounts", function () {
     return gulp.src(minPath.componentsJs.accounts)
         .pipe(concat("accounts.js"))
         .pipe(uglify({ mangle: { except: ['angular'] } }))
-        .pipe(gulp.dest(paths.componentsRoot + "accounts/"));
+        .pipe(gulp.dest(paths.componentsPublic + "accounts/"));
 });
 
 gulp.task("min:login", function () {
     return gulp.src(minPath.componentsJs.login)
         .pipe(concat("login.min.js"))
         .pipe(uglify({ mangle: { except: ['angular'] } }))
-        .pipe(gulp.dest(paths.componentsRoot + "login/"));
+        .pipe(gulp.dest(paths.componentsPublic + "login/"));
 });
 
 gulp.task("min:css", function () {
     return gulp.src(minPath.CSS)
         .pipe(concat("base.css"))
         .pipe(cssmin())
-        .pipe(gulp.dest(paths.webRoot + "app/css/"));
+        .pipe(gulp.dest(paths.public + "app/css/"));
 });
 
 var minComponentsTasks = [];
