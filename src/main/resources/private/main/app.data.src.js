@@ -18,7 +18,7 @@
         .constant("data", (function () {
 
             var project = {
-                name: "MCES",
+                name: "PR2",
                 Hosts: {
                     Statics: ""
                 },
@@ -33,35 +33,28 @@
             var templates = [
                  { template: "layout/nav", version: "" },
                  { template: "layout/footer", version: "" },
-                 { template: "default/index", version: "" }
+                 { template: "index", version: "" }
             ];
 
             var lazyLoadModules = [
                 {
-                    name: "admin",
+                    name: "login",
                     module: true,
                     files: [
-                        project.Hosts.Statics + "/components/admin/admin.min.js"
+                        project.Hosts.Statics + "/wwwroot/components/login/login.min.js"
                     ]
                 },
-                {
-                    name: "customers",
-                    module: true,
-                    files: [
-                        project.Hosts.Statics + "/components/customers/customers.min.js"
-                    ]
-                },
+
                 {
                     name: "summernote",
                     module: true,
                     files: [
-                        project.Hosts.Statics + "/assets/summernote/v0.8.2/summernote.css",
-                        project.Hosts.Statics + "/assets/summernote/v0.8.2/summernote.min.js",
-                        project.Hosts.Statics + "/assets/angularjs/summernote/angular-summernote.min.js"
+                        project.Hosts.Statics + "/wwwroot/assets/summernote/v0.8.2/summernote.css",
+                        project.Hosts.Statics + "/wwwroot/assets/summernote/v0.8.2/summernote.min.js",
+                        project.Hosts.Statics + "/wwwroot/assets/angularjs/summernote/angular-summernote.min.js"
                     ]
                 }
             ];
-
             var _data = {};
 
             _data.patterns = {};
@@ -75,7 +68,7 @@
             //  ====================================================================
             _data.templates = {};
             _data.templates.getURL = function (template) {
-                var value = project.Hosts.Statics + "/components/" + template;
+                var value = project.Hosts.Statics + "/wwwroot/components/" + template;
                 for (var t = 0; t < templates.length; t++) {
                     if (templates[t].template.toUpperCase() == template.toUpperCase()) {
                         var tVersion = (templates[t].version || "").length > 0 ? "." + templates[t].version : "";

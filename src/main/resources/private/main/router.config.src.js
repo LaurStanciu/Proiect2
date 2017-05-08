@@ -35,7 +35,7 @@
         //$locationProvider.html5Mode(true);
 
         $urlRouterProvider
-            .otherwise("/customers");
+            .otherwise("/login");
 
         $stateProvider
             // >> Layouts
@@ -90,32 +90,15 @@
                 controller: "accountsCtrl"
             })
 
-            .state("customers", {
-                url: "/customers",
+            .state("login", {
+                url: "/login",
                 parent: "defaultLayout",
-                templateUrl: data.templates.getURL("customers/customers"),
-                controller: "customersCtrl",
+                templateUrl: data.templates.getURL("login/login"),
+                controller: "loginCtrl",
                 resolve: {
                     loadDependencies: ["$stateParams", "$ocLazyLoad", function ($stateParams, $ocLazyLoad) {
                         //var srcs = $stateParams.editProfile == "edit" ? ["locations", "profiles", "summernote", "ngImgCrop"] : ["locations", "profiles"];
-                        var srcs = ["customers"];
-                        return $ocLazyLoad.load(ocLazyLoadSrcs(srcs));
-                    }]
-                }
-            })
-            .state("customers.query", {
-                url: "/query?id&storeId&name",
-                templateUrl: data.templates.getURL("customers/query"),
-                controller: "queryCtrl"
-            })
-            .state("admin", {
-                url: "/admin",
-                parent: "defaultLayout",
-                templateUrl: data.templates.getURL("admin/admin"),
-                controller: "adminCtrl",
-                resolve: {
-                    loadDependencies: ["$stateParams", "$ocLazyLoad", function ($stateParams, $ocLazyLoad) {
-                        var srcs = ["admin"];
+                        var srcs = ["login"];
                         return $ocLazyLoad.load(ocLazyLoadSrcs(srcs));
                     }]
                 }

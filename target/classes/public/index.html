@@ -1,36 +1,19 @@
 <!DOCTYPE html>
-<html ng-app="todoapp">
+<html lang="en-gb">
 <head>
-    <title>Todo App</title>
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../favicon.ico">
+    <link href="/wwwroot/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/wwwroot/assets/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="/wwwroot/app/css/base.css" rel="stylesheet" />
 </head>
-<body>
-<div class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">TodoApp</a>
-        </div>
-    </div>
-</div>
-
-<div class="container" ng-view>
-
-</div>
-
-<script src="/js/jquery.js"></script>
-<script src="/js/angular.js"></script>
-<script src="/js/angular-route.js"></script>
-<script src="/js/angular-cookies.js"></script>
-<script src="/js/angular-sanitize.js"></script>
-<script src="/js/angular-resource.js"></script>
-
-<script src="/scripts/app.js"></script>
+<body class="app" ng-app="app">
+<script src="/wwwroot/app/js/jquery-bootstrap.js"></script>
+<script src="/wwwroot/assets/angular/angular.min.js"></script>
+<script src="/wwwroot/app/js/app.js"></script>
+<toast></toast>
+<div class="pt-5" ui-view></div>
 </body>
 </html>
