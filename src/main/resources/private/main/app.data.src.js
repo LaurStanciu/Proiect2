@@ -38,10 +38,18 @@
 
             var lazyLoadModules = [
                 {
-                    name: "login",
+                    name: "sign-in",
                     module: true,
                     files: [
-                        project.Hosts.Statics + "/wwwroot/components/login/login.min.js"
+                        project.Hosts.Statics + "/wwwroot/components/accounts/accounts.min.js"
+                    ]
+                },
+
+                {
+                    name: "search",
+                    module: true,
+                    files: [
+                        project.Hosts.Statics + "/wwwroot/components/search/search.min.js"
                     ]
                 },
 

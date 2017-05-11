@@ -2,19 +2,19 @@
     "use strict";
     angular
         .module("app", ['ngDialog'])
-        .controller("loginCtrl", loginCtrl);
+        .controller("searchCtrl", searchCtrl);
 
-    loginCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast", "ngDialog"];
-    function loginCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast, ngDialog) {
+    searchCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast", "ngDialog"];
+    function searchCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast, ngDialog) {
 
-        $scope.credentials = {
-            email: "",
-            password: ""
+        $scope.seachField = {};
+
+        $scope.events = {
+            search: function(){
+                console.log("Search");
+            }
         };
 
-        $scope.login = function () {
-            console.log($scope.credentials);
-        };
 
         $scope.createToasts = {
             toastSuccess: function () {

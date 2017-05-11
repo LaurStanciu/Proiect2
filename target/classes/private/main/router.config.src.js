@@ -35,7 +35,7 @@
         //$locationProvider.html5Mode(true);
 
         $urlRouterProvider
-            .otherwise("/login");
+            .otherwise("/search");
 
         $stateProvider
             // >> Layouts
@@ -84,22 +84,29 @@
                 }
             })
 
-            .state("sign-in", {
-                url: "/sign-in?returnState&returnStateParams",
+            .state("accounts.sign-in", {
+                url: "/sign-in",
                 parent: "defaultLayout",
                 templateUrl: data.templates.getURL("accounts/sign-in"),
                 controller: "accountsCtrl"
             })
 
-            .state("login", {
-                url: "/login",
+            .state("accounts.sign-up", {
+                url: "/sign-up",
                 parent: "defaultLayout",
-                templateUrl: data.templates.getURL("login/login"),
-                controller: "loginCtrl",
+                templateUrl: data.templates.getURL("accounts/sign-up"),
+                controller: "accountsCtrl"
+            })
+
+            .state("search", {
+                url: "/search",
+                parent: "defaultLayout",
+                templateUrl: data.templates.getURL("search/search"),
+                controller: "searchCtrl",
                 resolve: {
                     loadDependencies: ["$stateParams", "$ocLazyLoad", function ($stateParams, $ocLazyLoad) {
                         //var srcs = $stateParams.editProfile == "edit" ? ["locations", "profiles", "summernote", "ngImgCrop"] : ["locations", "profiles"];
-                        var srcs = ["login"];
+                        var srcs = ["search"];
                         return $ocLazyLoad.load(ocLazyLoadSrcs(srcs));
                     }]
                 }

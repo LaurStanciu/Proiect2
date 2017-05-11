@@ -42,7 +42,7 @@ var minPath = {
     jQuery: [],
     componentsJs: {
         accounts: [],
-        login: []
+        search: []
     },
     CSS: []
 }
@@ -71,7 +71,7 @@ minPath.jQuery.push(paths.assetsPath + "plainJS/autoComplete/auto-complete.min.j
 minPath.componentsJs.accounts.push(paths.componentsPrivate + "accounts/*.js");
 //min for login
 
-minPath.componentsJs.login.push(paths.componentsPrivate + "login/*.js");
+minPath.componentsJs.search.push(paths.componentsPrivate + "search/*.js");
 
 //min for css
 minPath.CSS.push(paths.assetsPath + "bootstrap/css/bootstrap.css");
@@ -115,16 +115,16 @@ gulp.task("min:jquery-bootstrap", function () {
 
 gulp.task("min:accounts", function () {
     return gulp.src(minPath.componentsJs.accounts)
-        .pipe(concat("accounts.js"))
+        .pipe(concat("accounts.min.js"))
         .pipe(uglify({ mangle: { except: ['angular'] } }))
         .pipe(gulp.dest(paths.componentsPublic + "accounts/"));
 });
 
-gulp.task("min:login", function () {
+gulp.task("min:search", function () {
     return gulp.src(minPath.componentsJs.login)
-        .pipe(concat("login.min.js"))
+        .pipe(concat("search.min.js"))
         .pipe(uglify({ mangle: { except: ['angular'] } }))
-        .pipe(gulp.dest(paths.componentsPublic + "login/"));
+        .pipe(gulp.dest(paths.componentsPublic + "search/"));
 });
 
 gulp.task("min:css", function () {
@@ -136,7 +136,7 @@ gulp.task("min:css", function () {
 
 var minComponentsTasks = [];
 minComponentsTasks.push("min:accounts");
-minComponentsTasks.push("min:login");
+minComponentsTasks.push("min:search");
 
 var minTasks = [];
 minTasks.push("min:appjs");
