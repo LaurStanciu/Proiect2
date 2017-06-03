@@ -29,14 +29,14 @@
             },
 
             signUp: function (fromBody) {
-                var signUpURL = data.location.newURL(true, { api: "api", controller: "accounts", action: "signUp" });
+                var signUpURL = data.location.newURL(true, { api: "api", controller: "accounts", action: "sign-Up" });
                 return $http.post(signUpURL, fromBody).then(function (signUpResponse) {
                     return signUpResponse;
                 }, function (errResponse) { return errResponse; });
             },
 
             signIn: function (fromBody) {
-                var signInURL = data.location.newURL(true, { api: "api", controller: "accounts", action: "signIn" });
+                var signInURL = data.location.newURL(true, { api: "api", controller: "accounts", action: "sign-In" });
                 return $http.post(signInURL, fromBody)
                     .then(function (signInResponse) {
                         return signInResponse;

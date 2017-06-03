@@ -5,7 +5,7 @@ import static spark.Spark.post;
  * Created by Laur Stanciu on 6/3/2017.
  */
 public class AccountsResource {
-    private static final String API_CONTEXT = "/api";
+    private static final String API_CONTEXT = "/api/accounts";
 
     private final AccountsService accountsService;
 
@@ -17,12 +17,7 @@ public class AccountsResource {
     private void setupEndpoints(){
         post(API_CONTEXT + "/sign-up", "application/json",(request, response) -> {
             Models.Message msg = accountsService.signUp(request.body());
-
-            if(msg.type == 3) {
-                response.status(409);
-            }else if(msg.type == 1){
-                response.status(201);
-            }
+            response.status(200);
             return msg;
         },new JsonTransformer());
 

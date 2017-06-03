@@ -9,7 +9,7 @@
         $scope.accounts = accounts;
         $scope.data = data;
 
-
+        $scope.accountExists = false;
 
         $scope.vm = {
             signIn: {},
@@ -77,6 +77,7 @@
             },
 
             signUp: function () {
+                $scope.accountExists = false;
                 $http.post("/api/sign-up", $scope.vm.signUp).then(function (response) {
                     if(response.data.type == 1) {
                         $state.go("accounts.sign-in");
@@ -84,7 +85,7 @@
                     }
                     if(response.data.type == 3) {
                         console.log(response.data.type);
-
+                        $scope.accountExists = true;
                         $scope.createToasts.toastFailed();
                     }
                 }, function (errResponse) {
