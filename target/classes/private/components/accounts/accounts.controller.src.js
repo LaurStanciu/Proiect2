@@ -78,7 +78,7 @@
 
             signUp: function () {
                 $scope.accountExists = false;
-                $http.post("/api/sign-up", $scope.vm.signUp).then(function (response) {
+                $http.post("/api/accounts/sign-up", $scope.vm.signUp).then(function (response) {
                     if(response.data.type == 1) {
                         $state.go("accounts.sign-in");
                         $scope.createToasts.toastSuccess();
