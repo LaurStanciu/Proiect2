@@ -4,8 +4,8 @@
         .module("app")
         .controller("accountsCtrl", accountsCtrl);
 
-    accountsCtrl.$inject = ["accounts", "data", "$location", "$scope", "$state", "$stateParams", "ngProgressBar", "ngToast"];
-    function accountsCtrl(accounts, data, $location, $scope, $state, $stateParams, ngProgressBar, ngToast) {
+    accountsCtrl.$inject = ["accounts", "data", "$location", "$http", "$scope", "$state", "$stateParams", "ngProgressBar", "ngToast"];
+    function accountsCtrl(accounts, data, $location, $http, $scope, $state, $stateParams, ngProgressBar, ngToast) {
         $scope.accounts = accounts;
         $scope.data = data;
 
@@ -53,6 +53,9 @@
             signIn: function () {
                 console.log($scope.vm.signIn);
 
+
+
+
                 //
                 // if ($scope.progressbar) $scope.progressbar.complete();
                 // $scope.progressbar = ngProgressBar.createInstance();
@@ -71,7 +74,19 @@
 
             signUp: function () {
                 console.log($scope.vm.signUp);
-
+                $http.post("/api/sign-up", $scope.vm.signUp).then(function (response) {
+                    if(response.data.Type == 1) {
+                        $state.go("accounts.sign-in");
+                        console.log($scope.vm.signUp);
+                        $scope.createToasts.toastSuccess();
+                    }
+                    if(response.data.Type == 3) {
+                        $scope.createToasts.toastFailed();
+                    }
+                }, function (errResponse) {
+                    $scope.createToasts.toastFailed();
+                    return errResponse;
+                });
                 // if ($scope.progressbar) $scope.progressbar.complete();
                 // $scope.progressbar = ngProgressBar.createInstance();
                 // $scope.progressbar.start();
@@ -191,6 +206,36 @@
             //             });
             //     }
             // }
+        };
+
+        $scope.createToasts = {
+            toastSuccess: function () {
+                ngToast.create({
+                    className: " bg-success text-white",
+                    content: "<p>Success!</p>"
+                });
+            },
+
+
+            toastWarning: function (message) {
+                var innerText = message;
+                if (message === "" || message === null) {
+                    innerText = "Warning";
+                }
+                var toastContent = "<p>" + innerText + "</p>";
+                ngToast.create({
+                    className: " bg-warning text-white",
+                    content: toastContent
+                });
+            },
+
+            toastFailed: function () {
+                ngToast.create({
+                    className: " bg-danger text-white",
+                    content: "<p>Failed!</p>"
+
+                });
+            }
         };
     }
 })();

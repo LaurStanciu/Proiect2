@@ -15,7 +15,6 @@
             }
         };
 
-
         $scope.createToasts = {
             toastSuccess: function () {
                 ngToast.create({

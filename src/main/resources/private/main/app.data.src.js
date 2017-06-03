@@ -46,6 +46,14 @@
                 },
 
                 {
+                    name: "sign-up",
+                    module: true,
+                    files: [
+                        project.Hosts.Statics + "/wwwroot/components/accounts/accounts.min.js"
+                    ]
+                },
+
+                {
                     name: "search",
                     module: true,
                     files: [

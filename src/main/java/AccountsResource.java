@@ -17,7 +17,8 @@ public class AccountsResource {
     private void setupEndpoints(){
         post(API_CONTEXT + "/sign-up", "application/json",(request, response) -> {
             accountsService.signUp(request.body());
-            response.status(200);
+            response.status(201);
+            response.body();
             return response;
         });
 

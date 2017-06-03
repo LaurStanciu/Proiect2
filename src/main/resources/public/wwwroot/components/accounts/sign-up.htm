@@ -10,7 +10,7 @@
                         <div class="form-group">
                             <label for="inputEmail" class="form-label">Email</label>
                             <input id="inputEmail" class="form-control" name="email" type="email" ng-maxlength="30" ng-minlength="1"
-                                   ng-class="{'text-danger': signUpForm.email.$invalid}"  ng-model="vm.signUp.Email"
+                                   ng-class="{'text-danger': signUpForm.email.$invalid}"  ng-model="vm.signUp.email"
                                    placeholder="Enter Email" required/>
                             <small id="inputEmailWarning" ng-show="signUpForm.email.$invalid && signUpForm.email.$dirty"
                                    class="text-danger">Email must be between 1 and 30 characters long and it must contain the domain!
@@ -20,7 +20,7 @@
                             <label for="inputPass" class="form-label">Password</label>
                             <input id="inputPass" type="password" class="form-control" name="password" ng-maxlength="36"
                                    ng-minlength="1" ng-class="{'text-danger': signUpForm.password.$invalid}"
-                                   ng-model="vm.signUp.Password" placeholder="Enter Password" required/>
+                                   ng-model="vm.signUp.password" placeholder="Enter Password" required/>
                             <small id="passwordWarning" ng-show="signUpForm.password.$invalid && signUpForm.password.$dirty"
                                    class="text-danger">Password must be between 1 and 36 characters long!
                             </small>

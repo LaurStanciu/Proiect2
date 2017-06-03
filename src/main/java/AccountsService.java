@@ -1,28 +1,43 @@
 import com.google.gson.Gson;
 import com.mongodb.*;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+//import com.mongodb.client.model.Filters;
 
 import java.util.Date;
+
+import static com.mongodb.client.model.Filters.eq;
+
 
 /**
  * Created by Laur Stanciu on 6/3/2017.
  */
 public class AccountsService {
-    private final DB db;
-    private final DBCollection collection;
+    private final MongoDatabase db;
+    private final MongoCollection<Document> collection;
 
-    public AccountsService(DB db){
+    public AccountsService(MongoDatabase db){
         this.db = db;
-        this.collection = db.getCollection("onlineShop");
+        this.collection = db.getCollection("accounts");
     }
 
-    public void signUp(String body){
+    public Models.Message signUp(String body){
+        Models models = new Models();
+
         Account account = new Gson().fromJson(body, Account.class);
-        collection.insert(new BasicDBObject("email", account.getEmail()).append("password", account.getPassword()).append("createdOn", new Date()));
+        if(collection.count(eq("email", account.getEmail())) == 0)  {
+            collection.insertOne(new Document("email", account.getEmail()).append("password", account.getPassword()).append("createdOn", new Date()));
+        }
+        else{
+            return models.new Message(Models.MessageType.Failed, "");
+        }
+        return models.new Message(Models.MessageType.Successful, "");
+
     }
 
     public boolean signIn(String body){
         Account account = new Gson().fromJson(body, Account.class);
-
         return true;
     }
 }

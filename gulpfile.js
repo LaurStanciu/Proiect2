@@ -121,7 +121,7 @@ gulp.task("min:accounts", function () {
 });
 
 gulp.task("min:search", function () {
-    return gulp.src(minPath.componentsJs.login)
+    return gulp.src(minPath.componentsJs.search)
         .pipe(concat("search.min.js"))
         .pipe(uglify({ mangle: { except: ['angular'] } }))
         .pipe(gulp.dest(paths.componentsPublic + "search/"));
