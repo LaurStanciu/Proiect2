@@ -20,11 +20,11 @@ public class Models {
 
     public class Message
     {
-        public MessageType type;
+        public int type;
         public String text;
 
         public Message(MessageType type, String text){
-            this.type = type;
+            this.type = type.getValue();
             this.text = text;
         }
     }

@@ -9,6 +9,8 @@
         $scope.accounts = accounts;
         $scope.data = data;
 
+
+
         $scope.vm = {
             signIn: {},
             signUp: {}
@@ -23,6 +25,8 @@
             current: {},
             edit: {}
         };
+
+
 
         $scope.events = {
             //
@@ -73,14 +77,14 @@
             },
 
             signUp: function () {
-                console.log($scope.vm.signUp);
                 $http.post("/api/sign-up", $scope.vm.signUp).then(function (response) {
-                    if(response.data.Type == 1) {
+                    if(response.data.type == 1) {
                         $state.go("accounts.sign-in");
-                        console.log($scope.vm.signUp);
                         $scope.createToasts.toastSuccess();
                     }
-                    if(response.data.Type == 3) {
+                    if(response.data.type == 3) {
+                        console.log(response.data.type);
+
                         $scope.createToasts.toastFailed();
                     }
                 }, function (errResponse) {
@@ -215,8 +219,6 @@
                     content: "<p>Success!</p>"
                 });
             },
-
-
             toastWarning: function (message) {
                 var innerText = message;
                 if (message === "" || message === null) {
@@ -237,5 +239,6 @@
                 });
             }
         };
+
     }
 })();

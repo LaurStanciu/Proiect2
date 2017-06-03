@@ -35,7 +35,7 @@
         //$locationProvider.html5Mode(true);
 
         $urlRouterProvider
-            .otherwise("/search");
+            .otherwise("/sign-in");
 
         $stateProvider
             // >> Layouts

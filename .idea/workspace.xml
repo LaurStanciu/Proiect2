@@ -5,30 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="087b79e4-ffb5-4942-a884-c96cc78a9563" name="Default" comment="asdf">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Models.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/AccountsResource.class" afterPath="$PROJECT_DIR$/target/classes/AccountsResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/AccountsService.class" afterPath="$PROJECT_DIR$/target/classes/AccountsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Bootstrap.class" afterPath="$PROJECT_DIR$/target/classes/Bootstrap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Models$Message.class" afterPath="$PROJECT_DIR$/target/classes/Models$Message.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Proiect2.iml" afterPath="$PROJECT_DIR$/Proiect2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/AccountsResource.java" afterPath="$PROJECT_DIR$/src/main/java/AccountsResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/AccountsService.java" afterPath="$PROJECT_DIR$/src/main/java/AccountsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Bootstrap.java" afterPath="$PROJECT_DIR$/src/main/java/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models.java" afterPath="$PROJECT_DIR$/src/main/java/Models.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.controller.src.js" afterPath="$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.controller.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/private/components/search/search.controller.src.js" afterPath="$PROJECT_DIR$/src/main/resources/private/components/search/search.controller.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/private/main/app.data.src.js" afterPath="$PROJECT_DIR$/src/main/resources/private/main/app.data.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/private/main/router.config.src.js" afterPath="$PROJECT_DIR$/src/main/resources/private/main/router.config.src.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/app/js/app.js" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/app/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/accounts/accounts.min.js" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/accounts/accounts.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/accounts/sign-up.htm" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/accounts/sign-up.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/private/components/accounts/accounts.controller.src.js" afterPath="$PROJECT_DIR$/target/classes/private/components/accounts/accounts.controller.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/private/components/search/search.controller.src.js" afterPath="$PROJECT_DIR$/target/classes/private/components/search/search.controller.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/private/main/app.data.src.js" afterPath="$PROJECT_DIR$/target/classes/private/main/app.data.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/private/main/router.config.src.js" afterPath="$PROJECT_DIR$/target/classes/private/main/router.config.src.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/app/js/app.js" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/app/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/components/accounts/accounts.min.js" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/components/accounts/accounts.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/components/accounts/sign-up.htm" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/components/accounts/sign-up.htm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_2_11_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_4_2.xml" />
     </list>
     <ignored path="Proiect2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,35 +40,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Bootstrap.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bootstrap.java">
+      <file leaf-file-name="search.controller.src.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/search/search.controller.src.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            <state relative-caret-position="221">
+              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SparkBase.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/sparkjava/spark-core/2.0.0/spark-core-2.0.0-sources.jar!/spark/SparkBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-              <folding>
-                <element signature="e#746#747#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -87,21 +53,11 @@
       <file leaf-file-name="AccountsService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AccountsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TodoResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TodoResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -109,8 +65,8 @@
       <file leaf-file-name="AccountsResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AccountsResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="371">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,11 +74,33 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="accounts.controller.src.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.controller.src.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-45">
+              <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+              <folding>
+                <element signature="e#3942#3944#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Models.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Models.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="357">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="e#263#264#0" expanded="true" />
                 <element signature="e#303#304#0" expanded="true" />
@@ -131,34 +109,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="router.config.src.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/private/main/router.config.src.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="595">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonTransformer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JsonTransformer.java">
+      <file leaf-file-name="accounts.factory.src.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.factory.src.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="238">
+              <caret line="38" column="108" selection-start-line="38" selection-start-column="108" selection-end-line="38" selection-end-column="108" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accounts.controller.src.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.controller.src.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-              <folding>
-                <element signature="e#3982#3984#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -190,11 +156,9 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/main/resources/public/views/login.html" />
         <option value="$PROJECT_DIR$/src/main/resources/private/scripts/app.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/private/components/login/login.controller.src.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/layouts/default.htm" />
         <option value="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/accounts/sign-in.htm" />
-        <option value="$PROJECT_DIR$/src/main/resources/private/main/router.config.src.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/layouts/aside.htm" />
         <option value="$PROJECT_DIR$/src/main/resources/public/wwwroot/assets/bootstrap/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/main/java/Todo.java" />
@@ -207,12 +171,14 @@
         <option value="$PROJECT_DIR$/src/main/java/Message.java" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/main/resources/private/components/search/search.controller.src.js" />
-        <option value="$PROJECT_DIR$/src/main/java/AccountsResource.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Models.java" />
         <option value="$PROJECT_DIR$/src/main/java/AccountsService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.controller.src.js" />
         <option value="$PROJECT_DIR$/src/main/java/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/private/main/router.config.src.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Models.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AccountsResource.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.controller.src.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
       </list>
     </option>
   </component>
@@ -1243,7 +1209,7 @@
       <workItem from="1494765754031" duration="11000" />
       <workItem from="1495741497327" duration="1321000" />
       <workItem from="1496422363492" duration="2101000" />
-      <workItem from="1496486128091" duration="23272000" />
+      <workItem from="1496486128091" duration="26456000" />
     </task>
     <task id="LOCAL-00001" summary="ag;n">
       <created>1493397113629</created>
@@ -1256,7 +1222,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72672000" />
+    <option name="totallyTimeSpent" value="75856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1395,27 +1361,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/private/directives/ui-toggle-class.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/private/directives/ui-table.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/private/directives/ui-nav.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/assets/img/metro-systems.png" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/components/login/login.min.js" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/assets/angular/ui-bootstrap.js">
@@ -1454,14 +1399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/private/main/lazy.load.config.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/components/accounts/sign-in.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -1478,26 +1415,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/components/search/search.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TodoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
           <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/private/main/app.data.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1526,38 +1447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/private/main/router.config.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.factory.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="71" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/search/search.controller.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/components/accounts/sign-up.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1571,35 +1460,6 @@
         <state relative-caret-position="125">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JsonTransformer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.controller.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding>
-            <element signature="e#3982#3984#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Models.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding>
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1619,6 +1479,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1630,38 +1498,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AccountsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TodoResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
+        <state relative-caret-position="150">
           <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AccountsResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/JsonTransformer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="153">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#308#309#0" expanded="false" />
+            <element signature="e#349#350#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/components/search/search.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/private/directives/ui-toggle-class.src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/private/directives/ui-table.src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/private/directives/ui-nav.src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/private/main/lazy.load.config.src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/private/main/app.data.src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/private/main/router.config.src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/search/search.controller.src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AccountsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bootstrap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AccountsResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        <state relative-caret-position="371">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.factory.src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="38" column="108" selection-start-line="38" selection-start-column="108" selection-end-line="38" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.controller.src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+          <folding>
+            <element signature="e#3942#3944#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding />
         </state>
       </provider>

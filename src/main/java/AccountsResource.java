@@ -16,11 +16,15 @@ public class AccountsResource {
 
     private void setupEndpoints(){
         post(API_CONTEXT + "/sign-up", "application/json",(request, response) -> {
-            accountsService.signUp(request.body());
-            response.status(201);
-            response.body();
-            return response;
-        });
+            Models.Message msg = accountsService.signUp(request.body());
+
+            if(msg.type == 3) {
+                response.status(409);
+            }else if(msg.type == 1){
+                response.status(201);
+            }
+            return msg;
+        },new JsonTransformer());
 
         get(API_CONTEXT + "/sign-in", "application/json",(request, response) ->
                 accountsService.signIn(request.body()), new JsonTransformer());
