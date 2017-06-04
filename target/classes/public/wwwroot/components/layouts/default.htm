@@ -9,8 +9,7 @@
             <a data-toggle="dropdown" href=""><div class="c-gray"><i class="fs-40 fa fa-user-circle p-2"></i></div></a>
             <div class="dropdown-menu animate-scale float-right bs-30 wu-45 pt-0">
                 <div class="bg-alt--3 text-center py-3"><i class="fs-50 c-gray fa fa-user-circle"></i><span class="fw-500 text-ellipsis" ng-bind="accounts.identity().refName"></span></div>
-                <a class="dropdown-item pt-2" ui-sref="account.profile({name: data.text.toFriendlyURL(accounts.identity().UserName), account_Id: accounts.identity().Id, role: 'company', editProfile: ''})"><i class="ico ion-ios-person"></i>Profil</a>
-                <a class="dropdown-item" href="" ng-click="accounts.signOut()"><i class="ico ion-log-out"></i>Deconectati-va</a>
+                <a class="dropdown-item" href="" ng-click="accounts.signOut()"><i class="ico ion-log-out"></i>Sign out</a>
             </div>
         </li>
     </ul>

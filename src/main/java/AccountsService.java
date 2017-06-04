@@ -7,6 +7,7 @@ import org.bson.Document;
 
 import java.util.Date;
 
+import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
 
 
@@ -36,8 +37,15 @@ public class AccountsService {
 
     }
 
-    public boolean signIn(String body){
+    public Models.Message signIn(String body){
+        Models models = new Models();
+
         Account account = new Gson().fromJson(body, Account.class);
-        return true;
+        if(collection.count((and(eq("email", account.getEmail()), eq("password", account.getPassword())))) == 1)  {
+            return models.new Message(Models.MessageType.Successful, "");
+        }
+        else{
+            return models.new Message(Models.MessageType.Failed, "");
+        }
     }
 }

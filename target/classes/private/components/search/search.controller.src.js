@@ -19,7 +19,8 @@
             toastSuccess: function () {
                 ngToast.create({
                     className: " bg-success text-white",
-                    content: "<p>Success!</p>"
+                    content: "<p>Success!</p>",
+                    timeout: 1500
                 });
             },
 
@@ -32,14 +33,16 @@
                 var toastContent = "<p>" + innerText + "</p>";
                 ngToast.create({
                     className: " bg-warning text-white",
-                    content: toastContent
+                    content: toastContent,
+                    timeout: 1500
                 });
             },
 
             toastFailed: function () {
                 ngToast.create({
                     className: " bg-danger text-white",
-                    content: "<p>Failed!</p>"
+                    content: "<p>Failed!</p>",
+                    timeout: 1500
 
                 });
             }

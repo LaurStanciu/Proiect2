@@ -4,8 +4,8 @@
         .module("app")
         .factory("accounts", accounts);
 
-    accounts.$inject = ["$http", "data", "$location", "$state"];
-    function accounts($http, data, $location, $state) {
+    accounts.$inject = ["$rootScope","$http", "data", "$location", "$state"];
+    function accounts($rootScope,$http, data, $location, $state) {
 
         var accountsData = {
             identity: {},
@@ -22,7 +22,7 @@
             },
 
             signOut: function () {
-                var signOutURL = data.location.newURL(true, { api: "api", controller: "accounts", action: "signOut" });
+                var signOutURL = data.location.newURL(true, { api: "api", controller: "accounts", action: "sign-Out" });
                 return $http.post(signOutURL).then(function (signOutResponse) {
                     return signOutResponse;
                 }, function (errResponse) { return errResponse; });
@@ -36,7 +36,7 @@
             },
 
             signIn: function (fromBody) {
-                var signInURL = data.location.newURL(true, { api: "api", controller: "accounts", action: "sign-In" });
+                var signInURL = data.location.newURL(true, { api: "api", controller: "accounts", action: "sign-in" });
                 return $http.post(signInURL, fromBody)
                     .then(function (signInResponse) {
                         return signInResponse;
@@ -74,7 +74,7 @@
         };
 
         var value = {};
-        value.identity = function () { return accountsData.identity; };
+        value.identity = function () { return $rootScope.loginDetails.email; };
 
         value.loadIdentity = function () {
             return resources.identity()
@@ -85,7 +85,7 @@
         };
 
         value.isAuthenticated = function () {
-            return accountsData.identity.Id != 0 && accountsData.identity.Id != null;
+            return $rootScope.loginDetails.logged;
         };
 
         value.signIn = function (fromBody) {
@@ -135,10 +135,8 @@
             $state.go(_options.state, { returnState: srefReturnState, returnStateParams: srefReturnStateParams }, { reload: true, notify: true });
         };
 
-        value.getContents = function (fromRoute, fromQuery) {
-            return resources.getContents(fromRoute, fromQuery).then(function (getContentsResponse) {
-                return getContentsResponse;
-            });
+        value.getContents = function () {
+            return $rootScope.loginDetails.email;
         };
 
         value.updateContents = function (fromRoute, fromQuery, fromBody) {

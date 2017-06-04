@@ -21,8 +21,13 @@ public class AccountsResource {
             return msg;
         },new JsonTransformer());
 
-        get(API_CONTEXT + "/sign-in", "application/json",(request, response) ->
-                accountsService.signIn(request.body()), new JsonTransformer());
+        post(API_CONTEXT + "/sign-in", "application/json",(request, response) -> {
+            Models.Message msg = accountsService.signIn(request.body());
+            response.status(200);
+            return msg;
+        }, new JsonTransformer());
+
+
 
     }
 }

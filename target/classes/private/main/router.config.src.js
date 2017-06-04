@@ -11,7 +11,13 @@
     run.$inject = ["$rootScope", "$state", "$stateParams"];
     function run($rootScope, $state, $stateParams) {
         $rootScope.$state = $state;
+
         $rootScope.$stateParams = $stateParams;
+
+        $rootScope.loginDetails = {
+            email : "",
+            logged : false
+        };
         //$rootScope.$on("$stateChangeSuccess", function (event, toState, toParams, fromState, fromParams) {
         //    $state.previous = fromState;
         //    $state.previous.params = fromParams;
@@ -35,7 +41,7 @@
         //$locationProvider.html5Mode(true);
 
         $urlRouterProvider
-            .otherwise("/sign-in");
+            .otherwise("/search");
 
         $stateProvider
             // >> Layouts
