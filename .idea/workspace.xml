@@ -5,57 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="087b79e4-ffb5-4942-a884-c96cc78a9563" name="Default" comment="asdf">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/private/components/mobiles/query.controller.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/private/components/search/query.controller.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/private/components/tv/query.controller.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/mobiles/query.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/search/query.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/tv/query.htm" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/private/components/search/search.controller.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/private/components/tv/tv.controller.src.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/private/components/laptops/laptops.controller.src.js" afterPath="$PROJECT_DIR$/src/main/resources/private/components/laptops/laptops.controller.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/private/components/laptops/query.controller.src.js" afterPath="$PROJECT_DIR$/src/main/resources/private/components/laptops/query.controller.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/private/components/mobiles/mobiles.controller.src.js" afterPath="$PROJECT_DIR$/src/main/resources/private/components/mobiles/mobiles.controller.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/private/main/router.config.src.js" afterPath="$PROJECT_DIR$/src/main/resources/private/main/router.config.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/app/css/base.css" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/app/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/app/js/app.js" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/app/js/jquery-bootstrap.js" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/app/js/jquery-bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/assets/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/assets/bootstrap/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/assets/bootstrap/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/assets/bootstrap/css/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/assets/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/assets/bootstrap/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/assets/bootstrap/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/assets/bootstrap/css/bootstrap.min.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/laptops/laptops.htm" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/laptops/laptops.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/laptops/laptops.min.js" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/laptops/laptops.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/layouts/aside.htm" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/layouts/aside.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/mobiles/mobiles.htm" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/mobiles/mobiles.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/mobiles/mobiles.min.js" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/mobiles/mobiles.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/search/search.htm" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/search/search.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/search/search.min.js" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/search/search.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/tv/tv.htm" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/tv/tv.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/tv/tv.min.js" afterPath="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/tv/tv.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/private/components/laptops/laptops.controller.src.js" afterPath="$PROJECT_DIR$/target/classes/private/components/laptops/laptops.controller.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/private/components/laptops/query.controller.src.js" afterPath="$PROJECT_DIR$/target/classes/private/components/laptops/query.controller.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/private/components/mobiles/mobiles.controller.src.js" afterPath="$PROJECT_DIR$/target/classes/private/components/mobiles/mobiles.controller.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/private/main/router.config.src.js" afterPath="$PROJECT_DIR$/target/classes/private/main/router.config.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/app/css/base.css" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/app/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/app/js/app.js" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/app/js/jquery-bootstrap.js" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/app/js/jquery-bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/assets/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/assets/bootstrap/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/assets/bootstrap/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/assets/bootstrap/css/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/assets/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/assets/bootstrap/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/assets/bootstrap/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/assets/bootstrap/css/bootstrap.min.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/components/laptops/laptops.htm" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/components/laptops/laptops.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/components/laptops/laptops.min.js" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/components/laptops/laptops.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/components/layouts/aside.htm" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/components/layouts/aside.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/components/mobiles/mobiles.htm" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/components/mobiles/mobiles.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/components/mobiles/mobiles.min.js" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/components/mobiles/mobiles.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/components/search/search.htm" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/components/search/search.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/components/search/search.min.js" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/components/search/search.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/components/tv/tv.htm" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/components/tv/tv.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/wwwroot/components/tv/tv.min.js" afterPath="$PROJECT_DIR$/target/classes/public/wwwroot/components/tv/tv.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/private/components/search/search.controller.src.js" afterPath="$PROJECT_DIR$/src/main/resources/private/components/search/a_search.controller.src.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/private/components/tv/tv.controller.src.js" afterPath="$PROJECT_DIR$/src/main/resources/private/components/tv/a_tv.controller.src.js" />
     </list>
     <ignored path="Proiect2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,16 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="router.config.src.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/private/main/router.config.src.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="159" column="45" selection-start-line="159" selection-start-column="45" selection-end-line="159" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="query.controller.src.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/mobiles/query.controller.src.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -118,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="a_tv.controller.src.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="a_tv.controller.src.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/tv/a_tv.controller.src.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -128,10 +68,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="aside.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/components/layouts/aside.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="accounts.controller.src.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.controller.src.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510">
+            <state relative-caret-position="102">
               <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
               <folding />
             </state>
@@ -233,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/search/search.htm" />
         <option value="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/mobiles/mobiles.htm" />
         <option value="$PROJECT_DIR$/src/main/resources/private/components/tv/queryTv.controller.src.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/layouts/aside.htm" />
         <option value="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/tv/tv.htm" />
         <option value="$PROJECT_DIR$/src/main/resources/private/components/tv/tv.controller.src.js" />
         <option value="$PROJECT_DIR$/src/main/resources/private/components/search/search.controller.src.js" />
@@ -249,6 +198,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/private/components/mobiles/mobiles.controller.src.js" />
         <option value="$PROJECT_DIR$/src/main/resources/private/components/laptops/laptops.controller.src.js" />
         <option value="$PROJECT_DIR$/src/main/resources/private/components/tv/a_tv.controller.src.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/wwwroot/components/layouts/aside.htm" />
       </list>
     </option>
   </component>
@@ -389,7 +339,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1068,8 +1018,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1590,6 +1540,7 @@
       <workItem from="1496578837668" duration="2300000" />
       <workItem from="1496605651772" duration="16277000" />
       <workItem from="1496648838089" duration="15743000" />
+      <workItem from="1496667838078" duration="172000" />
     </task>
     <task id="LOCAL-00001" summary="ag;n">
       <created>1493397113629</created>
@@ -1602,7 +1553,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117400000" />
+    <option name="totallyTimeSpent" value="117572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1619,7 +1570,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.49582464" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33489582" sideWeight="0.5229167" order="8" side_tool="true" content_ui="tabs" x="1266" y="660" width="339" height="342" />
+      <window_info id="Gulp" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33489582" sideWeight="0.5229167" order="8" side_tool="true" content_ui="tabs" x="1266" y="660" width="339" height="342" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765625" sideWeight="0.44515103" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1787,7 +1738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1795,7 +1745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="5770" column="54" selection-start-line="5770" selection-start-column="43" selection-end-line="5770" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1837,30 +1786,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
           <caret line="4593" column="17" selection-start-line="4593" selection-start-column="17" selection-end-line="4593" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/components/layouts/query.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/components/layouts/query.htm" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/components/mobiles/query.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/components/layouts/aside.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1949,7 +1882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-589">
           <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1957,13 +1889,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
           <caret line="114" column="42" selection-start-line="114" selection-start-column="42" selection-end-line="114" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/private/main/router.config.src.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
+        <state relative-caret-position="2669">
           <caret line="159" column="45" selection-start-line="159" selection-start-column="45" selection-end-line="159" selection-end-column="45" />
           <folding />
         </state>
@@ -1973,7 +1904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1981,7 +1911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1989,7 +1918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-106">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1997,13 +1925,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/private/components/accounts/accounts.controller.src.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
+        <state relative-caret-position="102">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding />
         </state>
@@ -2069,6 +1996,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/wwwroot/components/layouts/aside.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
           <folding />
         </state>
       </provider>
