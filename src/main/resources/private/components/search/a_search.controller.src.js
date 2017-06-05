@@ -7,12 +7,15 @@
     searchCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast", "ngDialog"];
     function searchCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast, ngDialog) {
 
-        $scope.search = "";
+        $scope.searchField = {};
 
         $scope.events = {
             search: function(){
-                /*$state.go("search.query", { description: $scope.search });
-                $scope.search = "";*/
+                $state.go("search.query", {
+                    description : $scope.searchField.description,
+                    notify: false
+                });
+                $scope.searchField = {};
             }
         };
 

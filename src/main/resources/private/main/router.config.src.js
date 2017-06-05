@@ -103,33 +103,6 @@
                 controller: "accountsCtrl"
             })
 
-            .state("search", {
-                url: "/search",
-                parent: "defaultLayout",
-                templateUrl: data.templates.getURL("search/search"),
-                controller: "searchCtrl",
-                resolve: {
-                    loadDependencies: ["$stateParams", "$ocLazyLoad", function ($stateParams, $ocLazyLoad) {
-                        //var srcs = $stateParams.editProfile == "edit" ? ["locations", "profiles", "summernote", "ngImgCrop"] : ["locations", "profiles"];
-                        var srcs = ["search"];
-                        return $ocLazyLoad.load(ocLazyLoadSrcs(srcs));
-                    }]
-                }
-            })
-
-            .state("tv", {
-                url: "/tv",
-                parent: "defaultLayout",
-                templateUrl: data.templates.getURL("tv/tv"),
-                controller: "tvCtrl",
-                resolve: {
-                    loadDependencies: ["$stateParams", "$ocLazyLoad", function ($stateParams, $ocLazyLoad) {
-                        //var srcs = $stateParams.editProfile == "edit" ? ["locations", "profiles", "summernote", "ngImgCrop"] : ["locations", "profiles"];
-                        var srcs = ["tv"];
-                        return $ocLazyLoad.load(ocLazyLoadSrcs(srcs));
-                    }]
-                }
-            })
             .state("mobiles", {
                 url: "/mobiles",
                 parent: "defaultLayout",
@@ -143,6 +116,12 @@
                     }]
                 }
             })
+            .state("mobiles.query", {
+                url: "/query?description",
+                templateUrl: data.templates.getURL("mobiles/query"),
+                controller: "queryMobilesCtrl"
+            })
+
             .state("laptops", {
                 url: "/laptops",
                 parent: "defaultLayout",
@@ -159,7 +138,45 @@
             .state("laptops.query", {
                 url: "/query?description",
                 templateUrl: data.templates.getURL("laptops/query"),
-                controller: "queryCtrl"
+                controller: "queryLaptopsCtrl"
+            })
+
+            .state("search", {
+                url: "/search",
+                parent: "defaultLayout",
+                templateUrl: data.templates.getURL("search/search"),
+                controller: "searchCtrl",
+                resolve: {
+                    loadDependencies: ["$stateParams", "$ocLazyLoad", function ($stateParams, $ocLazyLoad) {
+                        //var srcs = $stateParams.editProfile == "edit" ? ["locations", "profiles", "summernote", "ngImgCrop"] : ["locations", "profiles"];
+                        var srcs = ["search"];
+                        return $ocLazyLoad.load(ocLazyLoadSrcs(srcs));
+                    }]
+                }
+            })
+            .state("search.query", {
+                url: "/query?description",
+                templateUrl: data.templates.getURL("search/query"),
+                controller: "querySearchCtrl"
+            })
+
+            .state("tv", {
+                url: "/tv",
+                parent: "defaultLayout",
+                templateUrl: data.templates.getURL("tv/tv"),
+                controller: "tvCtrl",
+                resolve: {
+                    loadDependencies: ["$stateParams", "$ocLazyLoad", function ($stateParams, $ocLazyLoad) {
+                        //var srcs = $stateParams.editProfile == "edit" ? ["locations", "profiles", "summernote", "ngImgCrop"] : ["locations", "profiles"];
+                        var srcs = ["tv"];
+                        return $ocLazyLoad.load(ocLazyLoadSrcs(srcs));
+                    }]
+                }
+            })
+            .state("tv.query", {
+                url: "/query?description",
+                templateUrl: data.templates.getURL("tv/query"),
+                controller: "queryTvCtrl"
             });
 
         function ocLazyLoadSrcs(srcs) {

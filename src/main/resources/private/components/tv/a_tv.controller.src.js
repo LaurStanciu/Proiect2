@@ -7,12 +7,15 @@
     tvCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast", "ngDialog"];
     function tvCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast, ngDialog) {
 
-        $scope.search = "";
+        $scope.searchField = {};
 
         $scope.events = {
             search: function(){
-                /*$state.go("tv.query", { description: $scope.search });
-                $scope.search = "";*/
+                $state.go("tv.query", {
+                    description : $scope.searchField.description,
+                    notify: false
+                });
+                $scope.searchField = {};
             }
         };
 

@@ -7,13 +7,17 @@
     laptopsCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast", "ngDialog"];
     function laptopsCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast, ngDialog) {
 
-        $scope.search = "";
+
+        $scope.searchField = {};
 
         $scope.events = {
             search: function(){
 
-                /*$state.go("laptops.query", { description: $scope.search });
-                $scope.search = "";*/
+                $state.go("laptops.query", {
+                    description : $scope.searchField.description,
+                    notify: false
+                });
+                $scope.searchField = {};
             }
         };
 

@@ -2,13 +2,13 @@
     "use strict";
     angular
         .module("app")
-        .controller("queryCtrl", queryCtrl);
-    queryCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast"];
-    function queryCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast) {
+        .controller("queryLaptopsCtrl", queryLaptopsCtrl);
+    queryLaptopsCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast"];
+    function queryLaptopsCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast) {
 
         $scope.getData = function (description) {
-            console.log(description);
-            console.log($stateParams);
+            if(description == null)
+                description = "";
             /*
             var url = "/api/Customer/query?id=" + id + "&storeId=" + storeid + "&name=" + name;
             $http.get(url).then(function (getContentsResponse) {

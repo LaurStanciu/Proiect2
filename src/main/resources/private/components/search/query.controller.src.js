@@ -2,9 +2,9 @@
     "use strict";
     angular
         .module("app")
-        .controller("queryLaptopsCtrl", queryLaptopsCtrl);
-    queryLaptopsCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast"];
-    function queryLaptopsCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast) {
+        .controller("querySearchCtrl", querySearchCtrl);
+    querySearchCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast"];
+    function querySearchCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast) {
 
         $scope.getData = function (description) {
             if(description == null)
