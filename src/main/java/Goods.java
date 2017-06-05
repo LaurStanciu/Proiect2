@@ -12,14 +12,14 @@ public class Goods {
     private String company;
     private String type;
     private String description;
-    //private String imagine;
+    private String image;
 
     public Goods(BasicDBObject dbObject) {
         this.id = dbObject.getInt("_id");
         this.company = dbObject.getString("company");
         this.type = dbObject.getString("type");
         this.description = dbObject.getString("description");
-        //this.imagine = dbObject.getString( key: "imagine");
+        this.image = dbObject.getString("image");
     }
 
 
@@ -37,6 +37,10 @@ public class Goods {
 
     public String getDescription() {
         return description;
+    }
+
+    public String getImage(){
+        return image;
     }
 
     //public String getImagine() {

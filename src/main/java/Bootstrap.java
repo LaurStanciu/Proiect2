@@ -22,7 +22,9 @@ public class Bootstrap {
         setIpAddress(IP_ADDRESS);
         setPort(PORT);
         staticFileLocation("/public");
+        new GoodsResource(new GoodsService(mongo()));
         new AccountsResource(new AccountsService(mongo()));
+
     }
 
     private static MongoDatabase mongo() throws Exception {

@@ -2,6 +2,7 @@
  * Created by Laur Stanciu on 6/4/2017.
  */
 import com.mongodb.BasicDBObject;
+import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.client.*;
 
@@ -10,6 +11,7 @@ import java.util.List;
 
 import org.bson.Document;
 
+import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -25,9 +27,10 @@ public class GoodsService {
     public GoodsService(MongoDatabase db){
         this.db = db;
         this.collection = db.getCollection("goods");
+
     }
 
-    public List<DBObject> findAll(){////tipul de date pe care il returnez ziceai ceva de un json.
+    public List<DBObject> findAll(){
         List<DBObject> goods = new ArrayList<>();
         MongoCursor dbObjects = (MongoCursor) collection.find();
         while(dbObjects.hasNext()){
@@ -37,6 +40,27 @@ public class GoodsService {
         return goods;
     }
 
+    public List<String> findGoods(String type, String description){
 
-    //// findOne(string, parametru)///ce returneaza daca sunt mai multe cu acelasi parametru?
+        List<String> goods = new ArrayList<>();
+        MongoCursor<Document> cursor;
+
+        if(description.equals("") && type.equals("")) cursor = (MongoCursor) collection.find().iterator();
+        else if(description.equals("")) cursor = (MongoCursor) collection.find((eq("type", type))).iterator();
+        else if(type.equals("")) cursor = (MongoCursor) collection.find(eq("description", description)).iterator();
+        else cursor = collection.find((and(eq("type", type), eq("description", description)))).iterator();
+
+        try {
+            while (cursor.hasNext()) {
+                goods.add(cursor.next().toJson());
+            }
+        } finally {
+            cursor.close();
+        }
+
+        return goods;
+    }
+
+
+
 }
