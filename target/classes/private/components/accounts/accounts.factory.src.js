@@ -22,10 +22,9 @@
             },
 
             signOut: function () {
-                var signOutURL = data.location.newURL(true, { api: "api", controller: "accounts", action: "sign-Out" });
-                return $http.post(signOutURL).then(function (signOutResponse) {
-                    return signOutResponse;
-                }, function (errResponse) { return errResponse; });
+                $rootScope.loginDetails.email = "";
+                $rootScope.loginDetails.logged = false;
+                $state.go("accounts.sign-in");
             },
 
             signUp: function (fromBody) {
@@ -111,15 +110,9 @@
         };
 
         value.signOut = function () {
-            return resources.signOut()
-                .then(function (signOutResponse) {
-                    accountsData.identity = {};
-                    //$state.go("app.account.log-out");
-                    return signOutResponse;
-                })
-                .then(function () {
-                    setTimeout(function () { window.location.reload(false); }, 100);
-                });
+            $rootScope.loginDetails.email = "";
+            $rootScope.loginDetails.logged = false;
+            $state.go("accounts.sign-in");
         };
 
         value.sref = function (options) {

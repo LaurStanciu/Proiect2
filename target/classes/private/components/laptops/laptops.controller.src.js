@@ -2,16 +2,17 @@
     "use strict";
     angular
         .module("app", ['ngDialog'])
-        .controller("searchCtrl", searchCtrl);
+        .controller("laptopsCtrl", laptopsCtrl);
 
-    searchCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast", "ngDialog"];
-    function searchCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast, ngDialog) {
+    laptopsCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast", "ngDialog"];
+    function laptopsCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast, ngDialog) {
 
         $scope.search = "";
 
         $scope.events = {
             search: function(){
-                /*$state.go("search.query", { description: $scope.search });
+
+                /*$state.go("laptops.query", { description: $scope.search });
                 $scope.search = "";*/
             }
         };

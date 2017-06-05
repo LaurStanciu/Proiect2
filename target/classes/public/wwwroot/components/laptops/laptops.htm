@@ -1,0 +1,14 @@
+﻿<div class="container">
+    <div class="row input-group">
+            <form name="search" class="form-inline col-xs-4 offset-3" ng-submit="events.search()">
+                <input id="inputSearch" class="form-control" name="inputSearch" type="text" ng-model="search"
+                       placeholder="Search for laptops"/>
+                <button class="btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+    </div>
+    <div ui-view>
+
+    </div>
+</div>

@@ -18,6 +18,7 @@
 
         $scope.events = {
             signIn: function () {
+                $scope.events.signOut();
                 if ($scope.progressbar) $scope.progressbar.complete();
                 $scope.progressbar = ngProgressBar.createInstance();
                 $scope.progressbar.start();

@@ -60,6 +60,30 @@
                         project.Hosts.Statics + "/wwwroot/components/search/search.min.js"
                     ]
                 },
+                {
+                    name: "tv",
+                    module: true,
+                    files: [
+                        project.Hosts.Statics + "/wwwroot/components/tv/tv.min.js"
+                    ]
+                },
+
+                {
+                    name: "mobiles",
+                    module: true,
+                    files: [
+                        project.Hosts.Statics + "/wwwroot/components/mobiles/mobiles.min.js"
+                    ]
+                },
+
+                {
+                    name: "laptops",
+                    module: true,
+                    files: [
+                        project.Hosts.Statics + "/wwwroot/components/laptops/laptops.min.js"
+                    ]
+                },
+
 
                 {
                     name: "summernote",

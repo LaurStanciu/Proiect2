@@ -42,7 +42,10 @@ var minPath = {
     jQuery: [],
     componentsJs: {
         accounts: [],
-        search: []
+        search: [],
+        tv: [],
+        mobiles: [],
+        laptops: []
     },
     CSS: []
 }
@@ -69,8 +72,17 @@ minPath.jQuery.push(paths.assetsPath + "plainJS/autoComplete/auto-complete.min.j
 
 //minify paths for components js files
 minPath.componentsJs.accounts.push(paths.componentsPrivate + "accounts/*.js");
-//min for login
 
+//min for tv
+minPath.componentsJs.tv.push(paths.componentsPrivate + "tv/*.js");
+
+//min for mobiles
+minPath.componentsJs.mobiles.push(paths.componentsPrivate + "mobiles/*.js");
+
+//min for laptops
+minPath.componentsJs.laptops.push(paths.componentsPrivate + "laptops/*.js");
+
+//min for search
 minPath.componentsJs.search.push(paths.componentsPrivate + "search/*.js");
 
 //min for css
@@ -127,6 +139,27 @@ gulp.task("min:search", function () {
         .pipe(gulp.dest(paths.componentsPublic + "search/"));
 });
 
+gulp.task("min:tv", function () {
+    return gulp.src(minPath.componentsJs.tv)
+        .pipe(concat("tv.min.js"))
+        .pipe(uglify({ mangle: { except: ['angular'] } }))
+        .pipe(gulp.dest(paths.componentsPublic + "tv/"));
+});
+
+gulp.task("min:mobiles", function () {
+    return gulp.src(minPath.componentsJs.mobiles)
+        .pipe(concat("mobiles.min.js"))
+        .pipe(uglify({ mangle: { except: ['angular'] } }))
+        .pipe(gulp.dest(paths.componentsPublic + "mobiles/"));
+});
+
+gulp.task("min:laptops", function () {
+    return gulp.src(minPath.componentsJs.laptops)
+        .pipe(concat("laptops.min.js"))
+        .pipe(uglify({ mangle: { except: ['angular'] } }))
+        .pipe(gulp.dest(paths.componentsPublic + "laptops/"));
+});
+
 gulp.task("min:css", function () {
     return gulp.src(minPath.CSS)
         .pipe(concat("base.css"))
@@ -136,6 +169,9 @@ gulp.task("min:css", function () {
 
 var minComponentsTasks = [];
 minComponentsTasks.push("min:accounts");
+minComponentsTasks.push("min:tv");
+minComponentsTasks.push("min:mobiles");
+minComponentsTasks.push("min:laptops");
 minComponentsTasks.push("min:search");
 
 var minTasks = [];

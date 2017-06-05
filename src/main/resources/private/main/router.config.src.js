@@ -4,9 +4,9 @@
 (function () {
     "use strict";
     angular
-      .module("app")
-      .run(run)
-      .config(config);
+        .module("app")
+        .run(run)
+        .config(config);
 
     run.$inject = ["$rootScope", "$state", "$stateParams"];
     function run($rootScope, $state, $stateParams) {
@@ -15,8 +15,8 @@
         $rootScope.$stateParams = $stateParams;
 
         $rootScope.loginDetails = {
-            email : "",
-            logged : false
+            email: "",
+            logged: false
         };
         //$rootScope.$on("$stateChangeSuccess", function (event, toState, toParams, fromState, fromParams) {
         //    $state.previous = fromState;
@@ -31,7 +31,6 @@
     }
 
 
-
     config.$inject = ["$locationProvider", "$stateProvider", "$urlRouterProvider", "$templateFactoryProvider", "data"];
     function config($locationProvider, $stateProvider, $urlRouterProvider, $templateFactoryProvider, data) {
 
@@ -41,11 +40,11 @@
         //$locationProvider.html5Mode(true);
 
         $urlRouterProvider
-            .otherwise("/search");
+            .otherwise("/sign-in");
 
         $stateProvider
-            // >> Layouts
-            // ================================================================
+        // >> Layouts
+        // ================================================================
             .state("defaultLayout", {
                 abstract: true,
                 templateUrl: data.templates.getURL("layouts/aside"),
@@ -63,13 +62,13 @@
             .state("accounts", {
                 url: "/accounts",
                 parent: "defaultLayout",
-                data: { title: "Profil" }
+                data: {title: "Profil"}
             })
 
             .state("account", {
                 url: "/accounts/{account_Id:[0-9]{1,10}}",
                 parent: "defaultLayout",
-                data: { title: "Profil" }
+                data: {title: "Profil"}
             })
 
             .state("account.profile", {
@@ -116,6 +115,51 @@
                         return $ocLazyLoad.load(ocLazyLoadSrcs(srcs));
                     }]
                 }
+            })
+
+            .state("tv", {
+                url: "/tv",
+                parent: "defaultLayout",
+                templateUrl: data.templates.getURL("tv/tv"),
+                controller: "tvCtrl",
+                resolve: {
+                    loadDependencies: ["$stateParams", "$ocLazyLoad", function ($stateParams, $ocLazyLoad) {
+                        //var srcs = $stateParams.editProfile == "edit" ? ["locations", "profiles", "summernote", "ngImgCrop"] : ["locations", "profiles"];
+                        var srcs = ["tv"];
+                        return $ocLazyLoad.load(ocLazyLoadSrcs(srcs));
+                    }]
+                }
+            })
+            .state("mobiles", {
+                url: "/mobiles",
+                parent: "defaultLayout",
+                templateUrl: data.templates.getURL("mobiles/mobiles"),
+                controller: "mobilesCtrl",
+                resolve: {
+                    loadDependencies: ["$stateParams", "$ocLazyLoad", function ($stateParams, $ocLazyLoad) {
+                        //var srcs = $stateParams.editProfile == "edit" ? ["locations", "profiles", "summernote", "ngImgCrop"] : ["locations", "profiles"];
+                        var srcs = ["mobiles"];
+                        return $ocLazyLoad.load(ocLazyLoadSrcs(srcs));
+                    }]
+                }
+            })
+            .state("laptops", {
+                url: "/laptops",
+                parent: "defaultLayout",
+                templateUrl: data.templates.getURL("laptops/laptops"),
+                controller: "laptopsCtrl",
+                resolve: {
+                    loadDependencies: ["$stateParams", "$ocLazyLoad", function ($stateParams, $ocLazyLoad) {
+                        //var srcs = $stateParams.editProfile == "edit" ? ["locations", "profiles", "summernote", "ngImgCrop"] : ["locations", "profiles"];
+                        var srcs = ["laptops"];
+                        return $ocLazyLoad.load(ocLazyLoadSrcs(srcs));
+                    }]
+                }
+            })
+            .state("laptops.query", {
+                url: "/query?description",
+                templateUrl: data.templates.getURL("laptops/query"),
+                controller: "queryCtrl"
             });
 
         function ocLazyLoadSrcs(srcs) {
@@ -148,7 +192,9 @@
                     });
                 });
                 deferred.resolve();
-                return callback ? promise.then(function () { return callback(); }) : promise;
+                return callback ? promise.then(function () {
+                    return callback();
+                }) : promise;
             }];
         }
 
