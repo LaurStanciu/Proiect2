@@ -1,5 +1,5 @@
 ﻿<div class="container">
-    <div class="row hidden-xs-down offset-md-2 offset-lg-1">
+    <div class="row hidden-xs-down offset-md-2 offset-lg-0">
         <div class="pt-2 pl-2" ng-repeat="good in goods">
             <div class="card" style="width: 14rem;">
                 <img class="card-img-top img-fluid" ng-src="{{good.image}}" alt="Card image cap">
@@ -11,7 +11,7 @@
         </div>
     </div>
     <div class="hidden-sm-up">
-        <div class="row mt-2 bd-10" ng-repeat="good in tvs">
+        <div class="row mt-2 bd-10" ng-repeat="good in goods">
             <div class="col-6">
                 <img class="img-fluid" ng-src="{{good.image}}" alt="Card image cap">
             </div>
