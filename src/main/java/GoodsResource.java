@@ -35,13 +35,6 @@ public class GoodsResource {
 
         get(API_CONTEXT + "/query//", "application/json", (request, response) ->
                 goodsService.findGoods("",""));
-/*
-        post(API_CONTEXT + "/search/", "application/json", (request, response) -> {
-            Models.Message msg = accountsService.signIn(request.body());
-            response.status(200);
-            return msg;
-        }, new JsonTransformer());
 
-        */
     }
 }

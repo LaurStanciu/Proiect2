@@ -6,7 +6,8 @@
     queryTvCtrl.$inject = ["accounts", "data", "$scope", "$http", "$state", "$stateParams", "ngProgressBar", "ngToast"];
     function queryTvCtrl(accounts, data, $scope, $http, $state, $stateParams, ngProgressBar, ngToast) {
 
-        $scope.tv = [];
+        $scope.noresult = false;
+        $scope.tvs = [];
 
         $scope.getData = function (description) {
             if(description == null)
@@ -15,14 +16,12 @@
             var url = "/api/query/tv/"+ description;
             $http.get(url).then(function (getContentsResponse) {
                 if (getContentsResponse.status === 200) {
-                    $scope.tv = getContentsResponse.data;
-                    console.log($scope.tv);
-                    //$scope.search = "";
+                    $scope.tvs = getContentsResponse.data;
+                    if($scope.tvs.length == 0) $scope.noresult = true;
+
                 }
             }, function (errResponse) { return errResponse; });
         };
-        
-        //$scope.modify = function (id)
 
         $scope.getData($stateParams.description);
     }
